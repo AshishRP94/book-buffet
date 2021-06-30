@@ -1,0 +1,107 @@
+<!-- ignore this file -->
+<!-- not part of this project -->
+<!--username AshishRaitHash -->
+<!-- Password 123 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+
+   
+
+    </div>
+
+    <style>
+        #ccv
+        {
+            width: 13%;
+            height: 37px;
+            border-radius:7px ;
+            border:1px solid grey;
+        }
+    
+        .form-control
+        {
+            width: 50% !important;
+        }
+
+        .radio
+        {
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout">
+        <h2>Payment</h2>
+        <p>Accepted Cards</p>
+        <img src="bankcards.PNG" alt="img of Accepted cards supported">
+   <!-- register -->
+    <div class="col-md-6 login-right">
+     
+    <form action="checkout.php" method="post">
+        <div class="form-group">
+            <label>Select Credit /Debit /Atm Card</label>
+            <br>
+            Credit Card<input  type="radio" name="card" class="radio" required >
+            Debit Card<input type="radio" name="card" class="radio" required >
+            Atm Card<input type="radio" name="card" class="radio" required >
+    
+    
+
+            </div>
+        
+        <div class="form-group">
+        <label>Name On Card</label>
+            <input type="text" name="namec" class="form-control" required > 
+        </div>
+
+        <div class="form-group">
+            <label>Card Number </label>
+            <input type="text" name="cardnumberc" class="form-control" required>
+
+        </div>
+
+        <div class="form-group">
+            <label>Expiry year </label>
+            <input type="text" name="expyearc" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label>Expiry Month </label>
+            <input type="text" name="expmonthc" class="form-control "  required>
+
+        </div>
+
+        <div class="form-group">
+            <label style="display: block;">CCV</label>
+            <input  id="ccv" type="text" name="ccvc"  required>
+        </div>
+        
+       
+
+
+
+        
+        <button type="submit" class="btn btn-primary">Proceed to Checkout</button>        
+        <br>
+        <br>
+
+        
+
+        
+    </form>
+    
+    
+</div>
+
+
+    </div>
+</body>
+</html>
